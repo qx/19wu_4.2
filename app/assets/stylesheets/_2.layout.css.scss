@@ -1,0 +1,75 @@
+@include sticky_footer;
+
+#content {
+  padding: $baseLineHeight 0;
+  min-height: 20 * $baseLineHeight;
+}
+
+#footer {
+  border-top: 1px solid $borderColor;
+  padding: 2 * $baseLineHeight 0;
+  background: $grayBackground;
+  li {
+    padding: 0 4px;
+  }
+}
+
+#flash .alert {
+  margin-top: $baseLineHeight / 2;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    ul {
+      float: left;
+      margin-top: $baseLineHeight;
+    }
+  }
+  .navbar-static-top .container {
+    width: auto;
+  }
+}
+
+.signed-out {
+  #header {
+    border-bottom: 1px solid $borderColor;
+    padding: (0.5 * $baseFontSize) 0;
+  }
+  .navbar-inner {
+    @include box-shadow(none);
+    border-width: 0;
+    background: $bodyBackground;
+  }
+}
+
+.l-event {
+  #main {
+    background: $grayBackground;
+  }
+  #content {
+    padding: 4 * $baseFontSize;
+  }
+  #content > .container {
+    background: $bodyBackground;
+    padding: $baseFontSize;
+    border: 1px solid $borderColor;
+  }
+  #footer {
+    background: $bodyBackground;
+  }
+}
+
+#mapPreview {
+  overflow: hidden;
+  margin: 0;
+  height: 350px;
+}
+
+#baiduMap {
+  height: 320px;
+  width: 100%;
+}

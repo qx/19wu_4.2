@@ -1,0 +1,17 @@
+wb = xlsx_package.workbook
+
+header_style = wb.styles.add_style alignment: { horizontal: :center }, sz: 16, b: true
+body_style   = wb.styles.add_style alignment: { horizontal: :right, wrap_text: true }
+string_style = wb.styles.add_style alignment: { horizontal: :right }, num_fmt: 12
+
+wb.add_worksheet(name: @event.title) do |sheet|
+  sheet.add_row ['订单编号', '抬头', '金额（元）', '商品', '收货地址', '姓名', '电话'], style: header_style
+  @orders.each do |order|
+    address = order.shipping_address
+    items = order.items.map do |item|
+      "#{item.quantity} x #{item.name}"
+    end.join(", ")
+    sheet.add_row [order.number, address.invoice_title, order.paid_amount, items, address.full_address, address.name, address.phone], style: body_style
+  end
+  sheet["A2:A#{@orders.size+1}"].each { |c| c.style = string_style } unless @orders.empty? # 订单号改为字符串格式
+end
