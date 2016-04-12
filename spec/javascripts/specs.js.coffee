@@ -7,6 +7,6 @@
 #
 #= require application
 #= require angular-mocks
-#= require locales/zh-CN
+#= require locales/zh
 #=require_tree ./helpers
 #=require_tree ./

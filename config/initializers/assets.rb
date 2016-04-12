@@ -1,1 +1,1 @@
- Rails.application.config.assets.precompile += %w( locales/zh-CN.js )
+ Rails.application.config.assets.precompile += %w( locales/zh.js )

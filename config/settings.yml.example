@@ -1,7 +1,7 @@
 # -*- yaml -*-
 defaults: &defaults
   time_zone: 'Beijing'
-  default_locale: 'zh-CN'
+  default_locale: 'zh'
 
   # Used to generate URL in the email. Must be the same of the domain of the
   # server.
@@ -85,7 +85,7 @@ development:
 test:
   <<: *defaults
   time_zone: 'Beijing'
-  default_locale: 'zh-CN'
+  default_locale: 'zh'
   host: 'localhost:3000'
 
   sms: []

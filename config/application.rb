@@ -31,8 +31,9 @@ module NineteenWu
 
     # @see config/initializers/setup_locale.rb
     # config.time_zone = 'Beijing'
-    # config.i18n.default_locale = :'zh-CN'
-
+    config.i18n.enforce_available_locales = false
+    config.i18n.available_locales = [:en, :zh]
+    config.i18n.default_locale = :zh
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 

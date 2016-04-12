@@ -1,4 +1,4 @@
-'zh-CN':
+'zh':
   errors:
     messages:
       wait_for_invite: "您正申请注册，请等待邀请邮件."
