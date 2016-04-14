@@ -39,7 +39,7 @@ gem 'gravtastic'
 gem 'cancan'
 gem 'cohort_me'
 gem 'acts_as_follower', github: 'flingbob/acts_as_follower'
-gem "angularjs-rails"
+gem "angularjs-rails", '~>1.2.0'
 gem "rabl"
 gem 'whenever', :require => false
 gem "tabs_on_rails"

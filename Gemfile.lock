@@ -87,7 +87,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    angularjs-rails (1.5.0)
+    angularjs-rails (1.2.26)
     arel (6.0.3)
     axlsx (2.0.1)
       htmlentities (~> 4.3.1)
@@ -172,7 +172,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    escape_utils (1.2.0)
+    escape_utils (1.2.1)
     eventmachine (1.2.0.1)
     eventmachine (1.2.0.1-x86-mingw32)
     exception_notification (4.1.4)
@@ -466,7 +466,7 @@ DEPENDENCIES
   activerecord-jdbcpostgresql-adapter
   acts_as_follower!
   alipay!
-  angularjs-rails
+  angularjs-rails (~> 1.2.0)
   axlsx_rails
   bootstrap-datepicker-rails
   bootstrap-sass (~> 2.3.2.0)
